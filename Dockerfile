@@ -1,9 +1,3 @@
-FROM node:lts-alpine as production
-WORKDIR /prod
-COPY ./package*.json ./
-RUN yarn install --production=true
-
-
 FROM node:lts-alpine as builder
 WORKDIR /build
 COPY ./package*.json ./

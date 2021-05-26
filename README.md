@@ -1,27 +1,21 @@
-# AngularUniversalLandingMain
+<h1 align="center">Run Angular Universal with Docker </h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+<p align="center">
+  <img src="https://camo.githubusercontent.com/599f5e0a0b57648b72e3c9098c6c1a7b94e51d70bfaea61613f8d635cae186fe/68747470733a2f2f616e67756c61722e696f2f67656e6572617465642f696d616765732f6d61726b6574696e672f636f6e636570742d69636f6e732f756e6976657273616c2e706e67" alt="angular-logo" width="120px" height="120px"/>
+  <br>
+  <i>Angular is a development platform for building mobile and desktop web applications
+    <br> using Typescript/JavaScript and other languages.</i>
+  <br>
+</p>
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<hr>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##Installation
+```zsh
+git clone https://github.com/EfrainGaray/angular-universal-landing.git
+cd angular-universal-landing
+docker build -t angular-universal-landingpage .
+docker run --rm -it -p 80:80 angular-universal-landingpage
+```
